@@ -4,7 +4,7 @@ import glob
 
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 chessboard_size = (8, 11)
-square_size = 3 # 3cm
+square_size = 300000 # 3cm
 
 objp = np.zeros((chessboard_size[1] * chessboard_size[0], 3), np.float32)
 objp[:, :2] = np.mgrid[0 : chessboard_size[0], 0 : chessboard_size[1]].T.reshape(-1, 2) * square_size
@@ -19,9 +19,9 @@ for fname in images:
     # Find the chess board corners
     ret, corners = cv.findChessboardCorners(gray, (chessboard_size[0], chessboard_size[1]), None)
     # If found, add object points, image points (after refining them)
-    if ret == True:
+    if ret == True and len(corners) == chessboard_size[0] * chessboard_size[1]:
         objpoints.append(objp)
-        corners2 = cv.cornerSubPix(gray,corners, (11, 11), (-1,-1), criteria)
+        corners2 = cv.cornerSubPix(gray,corners, (11, 11), (-1, -1), criteria)
         imgpoints.append(corners2)
         # Draw and display the corners
         cv.drawChessboardCorners(img, (chessboard_size[0], chessboard_size[1]), corners2, ret)
