@@ -1,0 +1,5 @@
+<launch>
+  <node type="call_assembler_service" pkg="livox_camera_calib" name="call_assembler_service">
+    <param name="save_path" value="/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/0.pcd" />
+  </node>
+</launch>

@@ -45,6 +45,8 @@ include_directories(
 add_executable(lidar_camera_calib src/lidar_camera_calib.cpp include/lidar_camera_calib.hpp)
 add_executable(lidar_camera_multi_calib src/lidar_camera_multi_calib.cpp include/lidar_camera_calib.hpp)
 add_executable(bag_to_pcd src/bag_to_pcd.cpp)
+add_executable(call_assembler_service src/call_assembler_service.cpp)
+
 target_link_libraries(lidar_camera_calib 
   ${catkin_LIBRARIES} ${OpenCV_LIBS} ${PCL_LIBRARIES} ${CERES_LIBRARIES}
 )
@@ -54,5 +56,9 @@ target_link_libraries(lidar_camera_multi_calib
 )
 
 target_link_libraries(bag_to_pcd 
+  ${catkin_LIBRARIES}  ${PCL_LIBRARIES}
+)
+
+target_link_libraries(call_assembler_service
   ${catkin_LIBRARIES}  ${PCL_LIBRARIES}
 )

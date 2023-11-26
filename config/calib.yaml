@@ -1,17 +1,17 @@
 # Data path. adjust them!
 common:
-    image_file: "/home/ycj/data/calib/image/0.png"
-    pcd_file: "/home/ycj/data/calib/pcd/0.pcd"
-    result_file: "/home/ycj/data/calib/extrinsic.txt"
+    image_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/0.bmp"
+    pcd_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/0.pcd"
+    result_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/result/extrinsic.txt"
 
 # Camera Parameters. Adjust them!
 camera:
-    camera_matrix: [1364.45, 0.0,      958.327,
-                0.0,     1366.46,  535.074,
+    camera_matrix: [1.45157863e+04, 0.0,      6.11257680e+02,
+                0.0,     1.45174742e+04,   3.64149921e+02,
                 0.0,     0.0,      1.0     ]
-    dist_coeffs: [0.0958277, -0.198233, -0.000147133, -0.000430056, 0.000000]
+    dist_coeffs: [-6.93575605e-02, 4.60146803e+01, -3.74748835e-03, -7.06991436e-03, 1.25255206e-01]
 
 # Calibration Parameters.!
 calib:
-    calib_config_file: "/home/ycj/catkin_ws/src/livox_camera_calib/config/config_outdoor.yaml"
+    calib_config_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/config/config_outdoor.yaml"
     use_rough_calib: true # set true if your initial_extrinsic is bad

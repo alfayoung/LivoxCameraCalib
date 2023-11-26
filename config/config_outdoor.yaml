@@ -12,10 +12,10 @@ ExtrinsicMat: !!opencv-matrix
   rows: 4
   cols: 4
   dt: d
-  data: [0.0,   -1.0,   0.0,    0.0,
-         0.0,  0.0,  -1.0,    0.0,
-         1.0,   0.0,    0.0,    0.0,
-         0.0,   0.0,    0.0,    1.0]
+  data: [-1.0,  0.0,   0.0,    0.0,
+         0.0,  -1.0,   0.0,    -0.2,
+         0.0,   0.0,   1.0,    0.0,
+         0.0,   0.0,   0.0,    1.0]
 # Params for Canny Edge Extraction
 
 Canny.gray_threshold: 20
