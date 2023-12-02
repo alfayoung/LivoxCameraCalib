@@ -6,12 +6,13 @@ common:
 
 # Camera Parameters. Adjust them!
 camera:
-    camera_matrix: [1.43227869e+04, 0.0,   6.14833919e+02,
-                0.0,     1.43247344e+04,   3.71244567e+02,
-                0.0,     0.0,      1.0     ]
-    dist_coeffs: [-7.23028676e-02, 4.40100998e+01, -3.54338418e-03, -6.84481883e-03, 1.40936880e-01]
+    camera_matrix: [1.64426762e+03, 0.00000000e+00, 7.11590519e+02,
+                    0.00000000e+00, 1.64229914e+03, 5.72749385e+02,
+                    0.00000000e+00, 0.00000000e+00, 1.00000000e+00]
+
+    dist_coeffs: [-1.44783717e-01, 2.91541728e-01, -2.90344578e-04, 3.97609511e-04, -4.11407104e-01]
 
 # Calibration Parameters.!
 calib:
-    calib_config_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/config/config_outdoor.yaml"
+    calib_config_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/config/config_indoor.yaml"
     use_rough_calib: true # set true if your initial_extrinsic is bad
