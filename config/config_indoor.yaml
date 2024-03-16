@@ -8,9 +8,9 @@ ExtrinsicMat: !!opencv-matrix
   rows: 4
   cols: 4
   dt: d
-  data: [0, 1, 0, 0,
-         0, 0, 1, -0.1,
-         1, 0, 0, 0,
+  data: [0.17364817766693033, -0.984807753012208, 0.0, 0,
+         0.0, 0.0, -1.0, 0,
+         0.984807753012208, 0.17364817766693033, 0.0, 0,
          0, 0, 0, 1]
 # Params for Canny Edge Extraction
 
@@ -25,5 +25,6 @@ Plane.normal_theta_min: 60
 Plane.normal_theta_max: 120
 Plane.max_size: 8
 Ransac.dis_threshold: 0.02
+Ransac.iter_num: 200
 Edge.min_dis_threshold: 0.05
 Edge.max_dis_threshold: 0.1
