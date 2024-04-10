@@ -1,14 +1,14 @@
 # Data path. adjust them!
 common:
-    image_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/0.bmp"
-    pcd_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/0.pcd"
+    image_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/2.bmp"
+    pcd_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/input/2_cropped.pcd"
     result_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/result/extrinsic.txt"
 
 # Camera Parameters. Adjust them!
 camera:
-    camera_matrix: [2.62486655e+03, 0.00000000e+00, 6.66897541e+02, 0.00000000e+00, 2.61964013e+03, 4.17765076e+02, 0.00000000e+00, 0.00000000e+00, 1.00000000e+00]
-    dist_coeffs: [-3.79878664e-01, 4.04140559e-01, 2.52991482e-04, 3.78890920e-04, -1.11638782e+00]
-
+    camera_matrix: [2.62694451e+03, 0.00000000e+00, 6.72781792e+02, 0.00000000e+00, 2.62079582e+03, 5.42004870e+02, 0.00000000e+00, 0.00000000e+00, 1.00000000e+00]
+    dist_coeffs: [-3.54736353e-01, -1.93712964e-01, 7.92834445e-04, 4.57177197e-04, 3.41790892e+00]
+    
 # Calibration Parameters.!
 calib:
     calib_config_file: "/home/alfayoung/Workspace/Calibration/src/livox_camera_calib/config/config_indoor.yaml"

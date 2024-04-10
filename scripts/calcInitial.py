@@ -1,12 +1,14 @@
 import numpy as np
 
-yaw = np.deg2rad(10)
+yaw = np.deg2rad(-10)
 
 R1 = np.array([
     [np.cos(-yaw), -np.sin(-yaw), 0],
     [np.sin(-yaw), np.cos(-yaw), 0],
     [0, 0, 1]
 ])
+
+print(R1)
 
 R2 = np.array([
     [np.cos(yaw), 0, np.sin(yaw)],
